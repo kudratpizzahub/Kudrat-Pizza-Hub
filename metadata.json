@@ -1,0 +1,6 @@
+{
+  "name": "Kudrat Unlimited Pizza Hub",
+  "description": "Clean, elegant, premium website for Kudrat Unlimited Pizza Hub in Ahmedabad - Unlimited Pizza Buffet, Salads, Starters, Chat, Desserts & Location Details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
