@@ -17,81 +17,80 @@ export const RESTAURANT_INFO = {
 
 export interface InstagramPost {
   id: string;
-  type: 'reel' | 'post';
+  driveId: string;
+  type: 'reel' | 'video';
   title: string;
   caption: string;
   thumbnail: string;
+  embedUrl: string;
+  driveUrl: string;
   likes: string;
   comments: string;
   views?: string;
   tag: string;
-  postUrl: string;
   date: string;
 }
 
 export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
-    id: 'ig-reel-1',
+    id: 'kudrat-video-1',
+    driveId: '13rzD7d8yqQhrpV4vJ9O4SGxZX3eWOOA3',
     type: 'reel',
-    title: '🔥 Cheesy Unlimited Pizza Pulls!',
-    caption: 'Ahmedabad’s most satisfying cheese pull! 🍕 Unlimited hot 4-types pan pizzas at Kudrat Unlimited Pizza Hub. Visit Hanspura today! #AhmedabadFood #UnlimitedPizza #KudratPizzaHub',
-    thumbnail: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80',
-    likes: '1.4k',
-    comments: '88',
-    views: '24.5k',
-    tag: 'Trending Reel',
-    postUrl: 'https://www.instagram.com/kudratpizzahub/',
-    date: 'Latest Reel',
-  },
-  {
-    id: 'ig-reel-2',
-    type: 'reel',
-    title: '🥗 20+ Cold Salad Counter Tour',
-    caption: 'Fresh, crunchy, and endless! Explore our colorful salad bar with Italian pasta salad, Russian salad, sprouted beans, and tangy corn. #SaladBar #UnlimitedBuffet',
-    thumbnail: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    likes: '980',
-    comments: '42',
-    views: '16.2k',
-    tag: 'Buffet Tour',
-    postUrl: 'https://www.instagram.com/kudratpizzahub/',
-    date: 'Recent Reel',
-  },
-  {
-    id: 'ig-post-3',
-    type: 'post',
-    title: '🍟 Crispy French Fries & Sizzling Starters',
-    caption: 'Golden french fries, garlic bread, crispy spring rolls and mouth-watering starters ready to serve unlimited! What’s your favorite starter? #Foodie #Ahmedabad',
-    thumbnail: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80',
-    likes: '1.1k',
-    comments: '56',
-    tag: 'Hot Starters',
-    postUrl: 'https://www.instagram.com/kudratpizzahub/',
-    date: 'Featured Post',
-  },
-  {
-    id: 'ig-reel-4',
-    type: 'reel',
-    title: '🍨 Warm Chocolate Brownie with Vanilla Ice Cream',
-    caption: 'The sweetest grand finale to your dinner buffet! Warm rich chocolate brownie topped with creamy vanilla ice cream. 🍫🍦 #DessertLover #BrownieIceCream',
-    thumbnail: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
-    likes: '2.1k',
-    comments: '114',
-    views: '32.8k',
-    tag: 'Dessert Special',
-    postUrl: 'https://www.instagram.com/kudratpizzahub/',
-    date: 'Viral Reel',
-  },
-  {
-    id: 'ig-post-5',
-    type: 'post',
-    title: '🎉 Family & Friends Unlimited Dining Celebration',
-    caption: 'Creating unforgettable memories with great food and good vibes! Pure Vegetarian with Jain options available. Book your table or walk in! #Hanspura #AhmedabadEats',
-    thumbnail: 'https://lh3.googleusercontent.com/d/1OYl9dO11JOiy1zNs9SLTbzHliV828PBe',
+    title: '🔥 Hot Cheesy Pan Pizzas & Cheese Pulls',
+    caption: 'Experience the ultimate unlimited pizza feast at Kudrat Pizza Hub, Hanspura! 4 types of hot fresh pan pizzas with delicious toppings and endless cheese pull.',
+    thumbnail: 'https://lh3.googleusercontent.com/d/13rzD7d8yqQhrpV4vJ9O4SGxZX3eWOOA3',
+    embedUrl: 'https://drive.google.com/file/d/13rzD7d8yqQhrpV4vJ9O4SGxZX3eWOOA3/preview',
+    driveUrl: 'https://drive.google.com/file/d/13rzD7d8yqQhrpV4vJ9O4SGxZX3eWOOA3/view?t=2.192',
     likes: '1.8k',
-    comments: '73',
-    tag: 'Hub Moments',
-    postUrl: 'https://www.instagram.com/kudratpizzahub/',
-    date: 'Community',
+    comments: '112',
+    views: '28.4k',
+    tag: 'Unlimited Pizzas',
+    date: 'Video Reel 1',
+  },
+  {
+    id: 'kudrat-video-2',
+    driveId: '11YdjSvyurBAMyTYBR6boL0TLIUbRMcLf',
+    type: 'reel',
+    title: '🥗 20+ Fresh Cold Salads & Delicious Starters',
+    caption: 'Tour our lavish cold salad bar counter with 20+ varieties of Italian pasta salads, Russian salad, fresh veggie bowls, and crunchy delights.',
+    thumbnail: 'https://lh3.googleusercontent.com/d/11YdjSvyurBAMyTYBR6boL0TLIUbRMcLf',
+    embedUrl: 'https://drive.google.com/file/d/11YdjSvyurBAMyTYBR6boL0TLIUbRMcLf/preview',
+    driveUrl: 'https://drive.google.com/file/d/11YdjSvyurBAMyTYBR6boL0TLIUbRMcLf/view?t=1.583',
+    likes: '1.4k',
+    comments: '76',
+    views: '19.2k',
+    tag: 'Salad Buffet',
+    date: 'Video Reel 2',
+  },
+  {
+    id: 'kudrat-video-3',
+    driveId: '1dPrIV3PaqXMmEez5MXI2G_tobCIjV44U',
+    type: 'reel',
+    title: '🍟 Crispy French Fries, Garlic Bread & Soup',
+    caption: 'Start your unlimited meal with piping hot soup, crunchy french fries, cheesy garlic bread, and delicious starters served non-stop at your table.',
+    thumbnail: 'https://lh3.googleusercontent.com/d/1dPrIV3PaqXMmEez5MXI2G_tobCIjV44U',
+    embedUrl: 'https://drive.google.com/file/d/1dPrIV3PaqXMmEez5MXI2G_tobCIjV44U/preview',
+    driveUrl: 'https://drive.google.com/file/d/1dPrIV3PaqXMmEez5MXI2G_tobCIjV44U/view?t=1.606',
+    likes: '1.9k',
+    comments: '94',
+    views: '24.1k',
+    tag: 'Hot Starters',
+    date: 'Video Reel 3',
+  },
+  {
+    id: 'kudrat-video-4',
+    driveId: '1l9OmZDEKzns5pxZr4UVhf9ommQPcMhZD',
+    type: 'reel',
+    title: '🍨 Warm Rich Brownie with Vanilla Ice Cream',
+    caption: 'The grand dessert finale you cannot miss! Rich chocolate brownie topped with smooth vanilla ice cream at Kudrat Unlimited Pizza Hub.',
+    thumbnail: 'https://lh3.googleusercontent.com/d/1l9OmZDEKzns5pxZr4UVhf9ommQPcMhZD',
+    embedUrl: 'https://drive.google.com/file/d/1l9OmZDEKzns5pxZr4UVhf9ommQPcMhZD/preview',
+    driveUrl: 'https://drive.google.com/file/d/1l9OmZDEKzns5pxZr4UVhf9ommQPcMhZD/view?t=13.107',
+    likes: '2.5k',
+    comments: '148',
+    views: '36.8k',
+    tag: 'Dessert Special',
+    date: 'Video Reel 4',
   },
 ];
 
