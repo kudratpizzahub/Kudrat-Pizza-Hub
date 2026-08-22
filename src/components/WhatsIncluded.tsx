@@ -112,14 +112,17 @@ export const WhatsIncluded: React.FC = () => {
                   <div className="w-full h-40 rounded-xl overflow-hidden bg-stone-100 relative">
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={`${item.count} ${item.title} - ${item.category} buffet item at Kudrat Unlimited Pizza Hub Ahmedabad`}
                       referrerPolicy="no-referrer"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src =
-                          'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80';
+                          'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&fm=webp&w=600&q=75';
                       }}
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                       loading="lazy"
+                      decoding="async"
+                      width="400"
+                      height="240"
                     />
                     
                     {/* Floating Count Badge */}

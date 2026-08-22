@@ -16,15 +16,18 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-emerald-200/80 bg-white group">
               <img
-                src="https://lh3.googleusercontent.com/d/1OYl9dO11JOiy1zNs9SLTbzHliV828PBe"
-                alt="Kudrat Unlimited Pizza Hub Interior and Dining"
+                src="https://lh3.googleusercontent.com/d/1OYl9dO11JOiy1zNs9SLTbzHliV828PBe=w800-rw"
+                alt="Kudrat Unlimited Pizza Hub Hanspura Restaurant Dining Area, Seating and Ambience in Ahmedabad"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    'https://drive.google.com/thumbnail?id=1OYl9dO11JOiy1zNs9SLTbzHliV828PBe&sz=w1200';
+                    'https://drive.google.com/thumbnail?id=1OYl9dO11JOiy1zNs9SLTbzHliV828PBe&sz=w800';
                 }}
                 className="w-full h-80 sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
+                decoding="async"
+                width="800"
+                height="420"
               />
               
               {/* Floating Top Pill */}

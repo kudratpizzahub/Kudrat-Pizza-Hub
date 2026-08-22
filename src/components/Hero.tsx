@@ -93,11 +93,15 @@ export const Hero: React.FC = () => {
 
               <div className="aspect-[4/3] w-full overflow-hidden bg-stone-100">
                 <img
-                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80"
-                  alt="Kudrat Unlimited Pizza Buffet Spread"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&fm=webp&w=800&q=75"
+                  alt="Kudrat Unlimited Pizza Buffet Spread with Fresh Cheesy Pan Pizzas, Starters and Cold Salads in Ahmedabad"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  width="800"
+                  height="600"
                 />
               </div>
               

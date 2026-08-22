@@ -15,9 +15,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 }) => {
   const [imageError, setImageError] = useState(false);
 
-  // Google Drive logo URL provided by user
-  const logoUrl = 'https://lh3.googleusercontent.com/d/1yx-h3re4h8Fy7NpPmq4UQ7khnaqSzvcf';
-  const fallbackLogoUrl = 'https://drive.google.com/thumbnail?id=1yx-h3re4h8Fy7NpPmq4UQ7khnaqSzvcf&sz=w600';
+  // Google Drive logo URL provided by user with WebP optimization
+  const logoUrl = 'https://lh3.googleusercontent.com/d/1yx-h3re4h8Fy7NpPmq4UQ7khnaqSzvcf=w300-rw';
+  const fallbackLogoUrl = 'https://drive.google.com/thumbnail?id=1yx-h3re4h8Fy7NpPmq4UQ7khnaqSzvcf&sz=w300';
 
   const sizeClasses = {
     sm: 'w-11 h-11 sm:w-12 sm:h-12',
@@ -41,9 +41,11 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         {!imageError ? (
           <img
             src={logoUrl}
-            alt="Kudrat Unlimited Pizza Hub Logo"
+            alt="Kudrat Unlimited Pizza Hub Official Brand Logo"
             className="w-full h-full object-contain drop-shadow-xs"
             referrerPolicy="no-referrer"
+            loading="eager"
+            decoding="async"
             onError={() => {
               const imgEl = document.getElementById('brand-logo-img') as HTMLImageElement;
               if (imgEl && imgEl.src !== fallbackLogoUrl) {

@@ -29,15 +29,18 @@ export const FoodGallery: React.FC = () => {
               <div className="aspect-[4/3] w-full overflow-hidden bg-stone-100">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={`${item.title} - ${item.category} item served at Kudrat Unlimited Pizza Hub Ahmedabad`}
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     // Fallback to crisp high-res pizza / food photo if any image fails
                     (e.target as HTMLImageElement).src =
-                      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80';
+                      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&fm=webp&w=700&q=75';
                   }}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
+                  decoding="async"
+                  width="700"
+                  height="525"
                 />
               </div>
 
