@@ -26,17 +26,17 @@ export default function App() {
         {/* 3. About Section */}
         <About />
 
-        {/* 4. Unlimited Buffet Pricing */}
+        {/* 4. Instagram Reels & Videos Section (Watch Our Food & Buffet Videos) */}
+        <InstagramFeed />
+
+        {/* 5. Unlimited Buffet Pricing (Right below Videos) */}
         <BuffetPricing />
 
-        {/* 5. What's Included (Menu Highlights) */}
+        {/* 6. What's Included (Menu Highlights) */}
         <WhatsIncluded />
 
-        {/* 6. Food Gallery */}
+        {/* 7. Food Gallery */}
         <FoodGallery />
-
-        {/* 7. Instagram Reels & Posts Section */}
-        <InstagramFeed />
 
         {/* 8. Visit Us & Google Map (Single Location Only) */}
         <VisitUs />

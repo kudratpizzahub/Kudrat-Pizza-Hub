@@ -111,11 +111,25 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Bottom Copyright Bar */}
-        <div className="pt-8 mt-10 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+        {/* Bottom Copyright & Credits Bar */}
+        <div className="pt-8 mt-10 border-t border-stone-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500 text-center sm:text-left">
           <div>
             © 2026 Kudrat Unlimited Pizza Hub. All Rights Reserved.
           </div>
+          
+          <div className="flex items-center gap-1 text-stone-400 text-xs">
+            <span>Website Designed & Developed by</span>
+            <a
+              href="https://www.vibratseo.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 font-bold underline underline-offset-2 transition-colors ml-1 inline-flex items-center gap-1"
+            >
+              <span>VIBRAT SEO</span>
+              <ArrowUpRight className="w-3 h-3" />
+            </a>
+          </div>
+
           <div>
             <button
               onClick={scrollToTop}

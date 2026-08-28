@@ -4,11 +4,27 @@ import { RESTAURANT_INFO } from '../data/restaurantData';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative overflow-hidden bg-gradient-to-b from-[#FAF7F2] via-[#FFFDF9] to-[#FAF7F2] py-12 lg:py-20 border-b border-stone-200/60">
+    <section id="home" className="relative overflow-hidden bg-[#FAF7F2] py-12 lg:py-20 border-b border-stone-200/60">
+      {/* Background Pizza Photo Texture with Soft Gradient Overlay */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&fm=webp&w=1600&q=70"
+          alt=""
+          role="presentation"
+          aria-hidden="true"
+          className="w-full h-full object-cover object-center opacity-10 filter contrast-125 saturate-150 scale-105"
+          loading="eager"
+          decoding="async"
+        />
+        {/* Warm radial and linear vignettes so text & cards pop with high contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F2]/95 via-[#FAF7F2]/85 to-[#FAF7F2]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAF7F2] via-transparent to-[#FAF7F2]" />
+      </div>
+
       {/* Decorative colorful ambient glows */}
-      <div className="absolute top-1/4 left-10 w-72 h-72 bg-amber-300/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-80 h-80 bg-red-400/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-1/3 w-64 h-64 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 left-10 w-72 h-72 bg-amber-400/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-80 h-80 bg-red-500/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-1/3 w-64 h-64 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
